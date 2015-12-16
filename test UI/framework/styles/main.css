@@ -1,0 +1,17 @@
+.darkBG{
+	background: #999;
+}
+
+.darkerBG{
+	background: #666;
+}
+
+.darkestBG{
+	background: #BBDEFB;
+}
+
+navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus 
+{
+    background-color: #212121;
+    color: #1976D2
+}
