@@ -10,8 +10,19 @@
 	background: #BBDEFB;
 }
 
-navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus 
+
+.navbar-nav > li > a {
+    padding-top:30px !important; 
+    padding-bottom:0px !important;
+    height: 80px;
+}
+.navbar {min-height:30px !important;}
+
+.navbar-brand
 {
-    background-color: #212121;
-    color: #1976D2
+	padding-top:10px !important;
+}
+
+.img-body {
+    margin-top: 100px;
 }
