@@ -25,7 +25,7 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li class="active"><a href="#">About      <span class="sr-only">(current)</span></a></li>
+			        <li id="about" class="active"><a href="#">About      <span class="sr-only">(current)</span></a></li>
 			        <li><a href="#">Partners</a></li>
 			        <li><a href="#">Associates</a></li>
 			        <li><a href="#">Contact Us</a></li>
@@ -39,27 +39,52 @@
 
 		<div class="container-fluid"> <!-- centered look and feel -->
 			<div class= "row">
-				<div class="col-md-3 col-lg-3">
+				<div id="panel1" class="col-md-3 col-lg-3">
 	    			<a href="#" class="thumbnail">
 	      				<img src="framework/images/captain-america.png" alt="Sonny"><br>
 	    			</a>
   				</div>
-  				<div class="col-md-3 col-lg-3">
+  				<div id= "panel2" class="col-md-3 col-lg-3">
   					<a href="#" class="thumbnail">
   						<img src="framework/images/thor.png" alt="Peter"><br>
   					</a>
   				</div>
-  				<div class="col-md-3 col-lg-3">
+  				<div id="panel3" class="col-md-3 col-lg-3">
   					<a href="#" class="thumbnail">
   						<img src="framework/images/wolverine.png" alt="Bob"><br>
   					</a>
   				</div>
-  				<div class="col-md-3 col-lg-3">
+  				<div "panel4" class="col-md-3 col-lg-3">
   					<a href="#" class="thumbnail">
   						<img src="framework/images/black-widow.png" alt="Gaby"><br>
   					</a>
   				</div>
 			</div>
 		</div>
+
+		<script src="framework/js/jquery-2.1.4.min.js"></script>
+		<script>
+			$(function(){
+
+			$('#about').on('click', function(){
+				$('#panel1').fadeToggle(200);
+			})
+
+			$('#about').on('click', function(){
+				$('#panel2').fadeToggle(200);
+			})
+
+			$('#about').on('click', function(){
+				$('#panel3').fadeToggle(200);
+			})
+
+			$('#about').on('click', function(){
+				$('#panel4').fadeToggle(200);
+			})
+		});
+			
+		</script>
+
+
 	</body>
 </html>
